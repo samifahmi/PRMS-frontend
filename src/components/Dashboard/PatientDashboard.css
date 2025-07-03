@@ -1,0 +1,263 @@
+.patient-dashboard {
+  padding: 2rem;
+  background: #f8fafd;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.patient-dashboard h1 {
+  color: #10b3b3;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.patient-dashboard h2 {
+  color: #234567;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.patient-dashboard .profile-card, .patient-dashboard .patient-profile-section ul {
+  background: #f5f8fa;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+.patient-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.patient-dashboard th, .patient-dashboard td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+.patient-dashboard th {
+  background: #e6f7ff;
+  color: #234567;
+  font-weight: 600;
+}
+.patient-dashboard tr:last-child td {
+  border-bottom: none;
+}
+.patient-dashboard .error {
+  color: #d32f2f;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .patient-dashboard {
+    padding: 1.5rem;
+  }
+  
+  .patient-dashboard h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .patient-dashboard h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .patient-dashboard .profile-card, .patient-dashboard .patient-profile-section ul {
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .patient-dashboard th, .patient-dashboard td {
+    padding: 0.8rem 0.8rem;
+  }
+}
+@media (max-width: 900px) {
+  .patient-dashboard {
+    padding: 1rem;
+  }
+  
+  .patient-dashboard h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .patient-dashboard h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .patient-dashboard .profile-card, .patient-dashboard .patient-profile-section ul {
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .patient-dashboard table {
+    font-size: 0.95rem;
+  }
+  
+  .patient-dashboard th, .patient-dashboard td {
+    padding: 0.7rem 0.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .patient-dashboard {
+    padding: 0.8rem;
+  }
+  
+  .patient-dashboard h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .patient-dashboard h2 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .patient-dashboard .profile-card, .patient-dashboard .patient-profile-section ul {
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .patient-dashboard table {
+    font-size: 0.9rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .patient-dashboard th, .patient-dashboard td {
+    padding: 0.6rem 0.5rem;
+    min-width: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .patient-dashboard {
+    padding: 0.6rem;
+  }
+  
+  .patient-dashboard h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .patient-dashboard h2 {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .patient-dashboard .profile-card, .patient-dashboard .patient-profile-section ul {
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .patient-dashboard table {
+    font-size: 0.85rem;
+  }
+  
+  .patient-dashboard th, .patient-dashboard td {
+    padding: 0.5rem 0.4rem;
+    min-width: 80px;
+  }
+  
+  .patient-dashboard .error {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .patient-dashboard {
+    padding: 0.5rem;
+  }
+  
+  .patient-dashboard h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .patient-dashboard h2 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .patient-dashboard .profile-card, .patient-dashboard .patient-profile-section ul {
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .patient-dashboard table {
+    font-size: 0.8rem;
+  }
+  
+  .patient-dashboard th, .patient-dashboard td {
+    padding: 0.4rem 0.3rem;
+    min-width: 70px;
+  }
+  
+  .patient-dashboard .error {
+    font-size: 0.85rem;
+  }
+}
+.profile-skeleton {
+  background: #f5f8fa;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+.skeleton {
+  background: #e6ecf3;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  animation: pulse 1.2s infinite ease-in-out;
+}
+.skeleton-title {
+  width: 40%;
+  height: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.skeleton-line {
+  width: 80%;
+  height: 1rem;
+}
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+/* Responsive Skeleton */
+@media (max-width: 768px) {
+  .profile-skeleton {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skeleton-title {
+    width: 60%;
+    height: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skeleton-line {
+    width: 90%;
+    height: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .profile-skeleton {
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skeleton-title {
+    width: 70%;
+    height: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .skeleton-line {
+    width: 95%;
+    height: 0.8rem;
+  }
+}
